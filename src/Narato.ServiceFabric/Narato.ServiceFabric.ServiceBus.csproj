@@ -8,9 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.ServiceFabric.Services" Version="3.1.274" />
-    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.4.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.6.4" />
     <PackageReference Include="Microsoft.Azure.ServiceBus" Version="3.0.0" />    
-    <PackageReference Include="Narato.ResponseMiddleware.Models" Version="2.0.3" />
+    <PackageReference Include="Narato.ResponseMiddleware.Models" Version="2.0.4" />
+    <PackageReference Include="Narato.ServiceFabric" Version="1.0.0.27-beta" />
+
+    <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
+    <PackageReference Include="System.Net.Primitives" Version="4.3.0" />
+    <PackageReference Include="Microsoft.Win32.Primitives" Version="4.3.0" />
+    
   </ItemGroup>
 
 </Project>
