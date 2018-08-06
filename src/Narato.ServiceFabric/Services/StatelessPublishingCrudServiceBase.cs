@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 
 namespace Narato.ServiceFabric.ServiceBus.Services
 {
-    public class StatelessPublishingCrudServiceBase<TModel> : StatelessCrudServiceBase<TModel>, ICrudService<TModel>
+    // See https://stackoverflow.com/questions/36985580/service-fabric-with-generic-services on why we don't implement ICrudService<TModel>
+    // TODO: when SF 6.3 is released, come back to this
+    public class StatelessPublishingCrudServiceBase<TModel> : StatelessCrudServiceBase<TModel>
         where TModel : ModelBase, new()
     {
         protected readonly ITopicSender _topicSender;
